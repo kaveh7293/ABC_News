@@ -17,6 +17,9 @@
     
   </ul>
   </li>
-  
+  <li> I defined a class so that vectorize the columns text and title and then stack them together. Note that, I did not want to use a single tfidf object for both of the text and title columns. I prefer to first vectorize each column and then stack them together. </li>
+  <li>Finaly, different classifiers with their hyperparameters are specified and a randomized search cross-validation were implemented to determine the optimal classfier with its corresponding hyperparameters. I also chose the value of max_features in the text vectorizer using the crossvalidation. 
+   </li>
+  <li>The fitted pipeline were tested on the test data set and an f1-score of ... were obtained. 
   
  </ol>
