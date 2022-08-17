@@ -10,4 +10,13 @@
 <li> For the title column, the missing values were replaced with the string 'not specified'. Simialrly, I believed that this approach is better than simply dropping the rows because it adds additional information which will be helpful during model developement. </li>
 </ul> 
 </li>
-<li> 
+<li> I created a class (with the required features so that can be used as a pipeline element) to handle preprocess the text. To do so, I used the following preprocessing:
+  <ul><li> I defined a method in the class so that clean the text by removing special characters (i.e., #$% etc.) and also replacing punctuation forms with the original form of the words</li>
+    <li> I lemmatized the words in the texts and titles. To be more efficient, I defined a class to determine the parts of speech of the words so that a more efficient lemmatizing can be used (e.g., the word following can be lemmatized to follow if it is a verb but it will not change if it is a noun).</li>
+      
+    
+  </ul>
+  </li>
+  
+  
+ </ol>
