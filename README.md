@@ -29,7 +29,7 @@
  <p> The current project that I have done have the following limitations and can be improved further:
  <ol>
  <li>
-  I used a tfidf for vectorizing the text data in this study. The disadvantage of this method is that it does not account for the order of the words in sentences. A more accurate method can be used using <strong>word embedding </strong> which could be used from tensorflow.keras module (see my other repository <a href='https://github.com/kaveh7293/Spotify-Reviews-'> here</a> which used this method for classifying the text) and use transfer learning.  
+  I used a tfidf for vectorizing the text data in this study. The disadvantage of this method is that it does not account for the order of the words in sentences. A more accurate method can be used using <strong>word embedding </strong> which could be used from tensorflow.keras module (see my other repository <a href='https://github.com/kaveh7293/Spotify-Reviews-'> <strong>here</strong></a> which used this method for classifying the text) and use transfer learning.  
  </li>
   <li> A deep learning model could also be used for classfication. Since the f1-score of this code is relatively small, I would like to do so, but because of time limit I did not do that. </li>
   <li> 
