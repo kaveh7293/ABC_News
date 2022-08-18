@@ -23,7 +23,8 @@
   <li>The fitted pipeline were tested on the test data set and an f1-score of 0.67 were obtained. 
   <li>
  </ol>
- 
+ <h3> Advantages of the code</h3>
+ <p> This code is written in a pipeline format so that the final model accepts the pandas dataframe as input. The model-user should not even choose the corresponding columns which are used for inputs of the model. The only thing that model-user should be careful is that her or his dataframe should have column names 'title' and 'text'.
  <h3> Limitation and Recommendation </h3>
  <p> The current project that I have done have the following limitations and can be improved further:
  <ol>
