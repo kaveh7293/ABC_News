@@ -4,7 +4,7 @@
 <p> The steps that have been used to solve this problem is as follows:<br>
 <ol>
 <li> I imported the required libraries and modules for fitting the model </li>
-<li> I created a class to handle the missing values in the news title and news text columns. Note that this class contaied three important methods (i.e., fit, fit_transform and transform)  so that it can be used in as an element in a pipeline. Also, this class inhere from BaseEstimator, TransformerMixin classes (the same format were used for all the defined classes which will be used in the pipeline). The missing values are handled as follows:
+<li> I created a <strong>class to handle the missing values</strong> in the news title and news text columns. Note that this class contaied three important methods (i.e., fit, fit_transform and transform)  so that it can be used in as an element in a pipeline. Also, this class inhere from BaseEstimator, TransformerMixin classes (the same format were used for all the defined classes which will be used in the pipeline). The <strong>missing values </strong> are handled as follows:
 <ul>
 <li> For the text column, the missing values were replaced with the string 'empty'. I did so because I think being empty is also important when reliability of news is evaluated.</li>
 <li> For the title column, the missing values were replaced with the string 'not specified'. Simialrly, I believed that this approach is better than simply dropping the rows because it adds additional information which will be helpful during model developement. </li>
