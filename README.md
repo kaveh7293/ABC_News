@@ -18,10 +18,10 @@
   </ul>
   </li>
   <li> I defined a class so that vectorize the columns text and title and then stack them together. Note that, I did not want to use a single tfidf object for both of the text and title columns. I prefer to first vectorize each column and then stack them together. </li>
-  <li>Finaly, different classifiers with their hyperparameters are specified and a randomized search cross-validation were implemented to determine the optimal classfier with its corresponding hyperparameters. I also chose the value of max_features in the text vectorizer using the crossvalidation. 
+  <li>Finaly, different classifiers (i.e., Gaussian naive Bayes classifier, multinomial naive Bayes classifier and support vector machine classifier) with their hyperparameters are specified and a randomized search cross-validation were implemented to determine the optimal classfier with its corresponding hyperparameters. Note that a better model could have been xgboost, but since its hyperparameter tunning were very time-consuming I could not find appropriate parameters using that. Note that even though I chose simple models, the process of hyperparameter tuning took 54 minutes. I ran hyper-parameter tunning when a xgboost model is used, but after about 5 hours I stopped the kernel because of the limitted time. 
    </li>
-  <li>The fitted pipeline were tested on the test data set and an f1-score of ... were obtained. 
-  
+  <li>The fitted pipeline were tested on the test data set and an f1-score of 0.67 were obtained. 
+  <li>
  </ol>
  
  <h3> Limitation and Recommendation </h3>
@@ -30,4 +30,6 @@
  <li>
   I used a tfidf for vectorizing the text data in this study. The disadvantage of this method is that it does not account for the order of the words in sentences. A more accurate method can be used using word embedding which could be used from tensorflow.keras module (see my other repository <a href='https://github.com/kaveh7293/Spotify-Reviews-'> here</a> which used this method for classifying the text).  
  </li>
+  <li> A deep learning model could also be used in this study for classfication. However, since the accuracy of the current model is acceptable I did not use deep learning.</li>
+  <li> 
  </ol>
