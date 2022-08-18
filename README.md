@@ -21,7 +21,7 @@
   <li>Finaly, <strong> different classifiers (i.e., Gaussian naive Bayes classifier, multinomial naive Bayes classifier and support vector machine classifier) with their hyperparameters are specified</strong> and a randomized search cross-validation were implemented to determine the optimal classfier with its corresponding hyperparameters (<a href='https://github.com/kaveh7293/ABC_News/blob/main/Take_Home_Assignment_HyperParameterTuning.py'><strong>HyperParameter Tuning Code</strong></a>). Note that a better model could have been xgboost, but since its hyperparameter tunning were very time-consuming I could not find appropriate parameters using that. Note that even though I chose simple models, the process of hyperparameter tuning took 54 minutes. I ran hyper-parameter tunning when a xgboost model is used, but after about 5 hours I stopped the kernel because of the limitted time. 
    </li>
   <li>After finding the appropriate hyperparameter, pipeline containg all the steps was used  and the quality of the model predictions for the test data set were determined (<a href='https://github.com/kaveh7293/ABC_News/blob/main/Take_Home_Assignment_FittingModel.py'><strong>see the code here</strong></a>). 
-  <li>
+  </li>
  </ol>
  <h3> Advantages of the code</h3>
  <p> This code is written in a <strong> pipeline </strong> format so that the final model accepts the pandas dataframe as an input. The model-user should not even choose the corresponding columns which are used for inputs of the model. The only thing that model-user should be careful is that their dataframe should have column names 'title' and 'text'.
