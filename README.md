@@ -23,3 +23,11 @@
   <li>The fitted pipeline were tested on the test data set and an f1-score of ... were obtained. 
   
  </ol>
+ 
+ <h3> Limitation and Recommendation </h3>
+ <p> The current project that I have done have the following limitations and can be improved further:
+ <ol>
+ <li>
+  I used a tfidf for vectorizing the text data in this study. The disadvantage of this method is that it does not account for the order of the words in sentences. A more accurate method can be used using word embedding which could be used from tensorflow.keras module (see my other repository <a href='https://github.com/kaveh7293/Spotify-Reviews-'> here</a> which used this method for classifying the text).  
+ </li>
+ </ol>
